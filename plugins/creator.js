@@ -10,41 +10,23 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 //------- NOMOR
  const pp = fs.readFileSync('./media/own.jpg')
   let nowner1 = `${nomorown1.split`@`[0]}@s.whatsapp.net`
-  let nowner2 = `${nomorown2.split`@`[0]}@s.whatsapp.net`
 let teksnomor = (
 `╳ ── ◸ *Mʏ Oᴡɴᴇʀ* ◹ ── ╳
 ⟣⟮ *${nameown1}* ⟯⟢
-⟬ @${nomorown1.split`@`[0]} ⟭
-┆
-⟣⟮ *${nameown2}* ⟯⟢
-⟬ @${nomorown2.split`@`[0]} ⟭
-┆`
+⟬ @${nomorown1.split`@`[0]} ⟭`
 )
 //------------ BIO
 let ppown = await conn.profilePictureUrl(nomorown1 + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1])
-let teksbio = `┆⫹⫺ 💌 Nama : Aldi
-┆⫹⫺ ✉️ Nama RL : HAMBA ALLAH
+let teksbio = `┆⫹⫺ 💌 Nama : Ren uwu
+┆⫹⫺ ✉️ Nama RL : Ren Uwu
 ┆⫹⫺ ♂️ Gender : Pria
-┆⫹⫺ 🕋 Agama : Islam
-┆⫹⫺ ⏰ Tanggal lahir : 16 - 10 - 2007
-┆⫹⫺ 🎨 Umur : 15
-┆⫹⫺ 🧮 Kelas : IX
-┆⫹⫺ 🧩 Hobby : 𝙼𝚘𝚍𝚒𝚏𝚒𝚔𝚊𝚜𝚒 𝚙𝚎𝚛𝚊𝚗𝚐𝚔𝚊𝚝 𝚕𝚞𝚗𝚊𝚔
-┆⫹⫺ 💬 Sifat : ASIK,BAIK,RAMAH
-┆⫹⫺ 🗺️ Tinggal : Indonesia, Sumatera Utara
-└––––––––––––·•
-`
-let ppown2 = await conn.profilePictureUrl(nomorown2 + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
-let teksbio2 = `┆⫹⫺ 💌 Nama : Aisyah
-┆⫹⫺ ✉️ Nama RL : HAMBA ALLAH
-┆⫹⫺ ♂️ Gender : Wanita
-┆⫹⫺ 🕋 Agama : Islam
-┆⫹⫺ ⏰ Tanggal lahir : 07 - 05 - 2007
-┆⫹⫺ 🎨 Umur : 15
-┆⫹⫺ 🧮 Kelas : IX
-┆⫹⫺ 🧩 Hobby : Banyak
-┆⫹⫺ 💬 Sifat : ASIK,BAIK,RAMAH
-┆⫹⫺ 🗺️ Tinggal : Indonesia, Bengkulu
+┆⫹⫺ 🕋 Agama : -
+┆⫹⫺ ⏰ Tanggal lahir : Kepo km xD 
+┆⫹⫺ 🎨 Umur : - 
+┆⫹⫺ 🧮 Kelas : ga sekolah bg
+┆⫹⫺ 🧩 Hobby : gada
+┆⫹⫺ 💬 Sifat : ga asik
+┆⫹⫺ 🗺️ Tinggal : pengen tinggal di isekai
 └––––––––––––·•
 `
 
@@ -53,9 +35,7 @@ let teksbio2 = `┆⫹⫺ 💌 Nama : Aisyah
 𐚀 Oᴡɴᴇʀ Tɪᴅᴀᴋ Rᴇsᴘᴏɴᴅ Cʜᴀᴛ Aɴᴇʜ
 𐚀 Oᴡɴᴇʀ Bᴇʀʜᴀᴋ Bʟᴏᴄᴋ Sɪᴀᴘᴀ Sᴀᴊᴀ
 𐚀 Gᴀᴋ Rᴇsᴘᴏɴᴅ Kᴀʟᴏ Mɪɴᴛᴀ Sᴄ
-𐚀 Eᴛɪᴋᴀɴʏᴀ Dɪᴘᴀᴋᴇ
-𐚀 Cʜᴇᴛ Cᴇᴡᴇ Gᴡ Aɴᴇʜ Aɴᴇʜ Gᴡ Bᴜᴀᴛ Tɪᴅᴜʀ Lᴜ
-𐚀 Cʜᴇᴛ Aɴᴇʜ Gᴀᴋ Jᴇʟᴀs Bᴀɴ/Bʟᴏᴄᴋ
+𐚀 Chat Aɴᴇʜ Gᴀᴋ Jᴇʟᴀs Bᴀɴ/Bʟᴏᴄᴋ
 𐚀 Cᴀʟʟ Bʟᴏᴄᴋ\n⫹ Kᴇᴛɪ *.rules* Uɴᴛᴜᴋ Mᴇʟɪʜᴀᴛ Rᴜʟᴇs Sᴇʟᴇɴɢᴋᴀᴘɴʏ ⫺`
 const sections = 
 [{
@@ -63,8 +43,7 @@ title: `⫹⫺ Oᴛʜᴇʀ ⫹⫺`,
 rows: [
 {title: "⸙ Kontak", rowId: ".owner kontak"},
 {title: "⸙ Nomor", rowId: ".owner nomor"},
-{title: "⸙ Biodata Aldi", rowId: ".owner bio"},
-{title: "⸙ Biodata Aisyah", rowId: ".owner bio2"},
+{title: "⸙ Biodata Ren", rowId: ".owner bio"},
 {title: "⸙ Script", rowId: ".sc"},
 ]}, {
 title: `⬔ Sᴜᴘᴘᴏʀᴛ Mᴇ ⬔`,
@@ -109,18 +88,13 @@ await conn.sendMessage(m.chat, { contacts: { displayName: wm, contacts: [{ vcard
             case 'bio':
           //conn.sendHydrated(m.chat, teksbio, wm, ppown, sig, "📷 Instagram", nomorown, '🌹 Nomor', [[null, null], [null, null],[null,null]], m)
 
-   conn.sendButton(m.chat, '┍┈༺ *𝙱𝚒𝚘𝙳𝚊𝚝𝚊 𝙰𝚕𝚍𝚒* ༻', teksbio, ppown, [
+   conn.sendButton(m.chat, '┍┈༺ *𝙱𝚒𝚘𝙳𝚊𝚝𝚊 Ren* ༻', teksbio, ppown, [
                 ['Sewa Bot', `${usedPrefix}sewa`],
                 ['Menu', `${usedPrefix}menu`]
             ], m)
             break
                         case 'bio2':
-          //conn.sendHydrated(m.chat, teksbio, wm, ppown, sig, "📷 Instagram", nomorown, '🌹 Nomor', [[null, null], [null, null],[null,null]], m)
-
-          conn.sendButton(m.chat, '┍┈༺ *𝙱𝚒𝚘𝙳𝚊𝚝𝚊 𝙰𝚒𝚜𝚢𝚊𝚑* ༻', teksbio2, ppown2, [
-                ['Sewa Bot', `${usedPrefix}sewa`],
-                ['Menu', `${usedPrefix}menu`]
-            ], m)
+          //conn.sendHydrated(m.chat, teksbio, wm, ppown, sig, "📷 Instagram", nomorown, '🌹 Nomor', [[null, null], [null, null],[null,null]], m)m)
             break
             
           default:
